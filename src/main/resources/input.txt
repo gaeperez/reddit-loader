@@ -1,0 +1,19 @@
+# Run mode UPDATE: Retrieve all the avaiable Submissions (including their Comments) using all the sort types for the specified Subreddit. 
+# This mode uses the official Reddit API.
+# The input parameter is the name of the Subreddit (e.g. DBZDokkanBattle).
+# UPDATE	DBZDokkanBattle
+
+# Run mode QUERY: Search all Submissions containing the specified query (the sort type is by Relevance). This mode retrieves all information from the located Submissions (including the totallity of their Comments and their associated Subreddits).
+# This mode uses the official Reddit API.
+# The input parameter is a query as a string (e.g. Dragon Ball)
+# QUERY	Dragon Ball
+
+# Run mode PSCOMMENT: Retrieve all information from the specified comments (including their Submissions and Subreddits).
+# This mode uses mainly the Pushshift API and, in a lesser extent, the Reddit API.
+# The input parameter are the URL query parameters used by PS API (https://github.com/pushshift/api). The possible values are: query (q), ids, size, sort, sort_type, author, subreddit, after and before. The values may be present and be empty.
+# PSCOMMENT	ids=&q=DragonBall&size=5&sort=desc&sort_type=score&author=&subreddit=DBZDokkanBattle&after=&before=
+
+# Run mode PSSUBMISSION: Retrieve all information from the specified Submissions (including their Comments and Subrredits).
+# This mode uses mainly the Pushshift API and, in a lesser extent, the Reddit API.
+# The input parameter are the URL query parameters used by PS API (https://github.com/pushshift/api). The possible values are: ids, query (q), query not (q:not), title, title:not, selftext, selftext:not, size, sort, sort_type, author, subreddit, after, before, score, num_comments, over_18, is_video, locked, stickied, spoiler and contest_mode. The values may be present and be empty.
+# PSSUBMISSION	subreddit=DBZDokkanBattle&sort=desc&size=500
